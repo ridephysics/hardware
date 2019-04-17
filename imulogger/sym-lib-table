@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name imulogger-symbols)(type Legacy)(uri ${KIPRJMOD}/imulogger-symbols.lib)(options "")(descr ""))
+)
