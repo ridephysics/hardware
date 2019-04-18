@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L RF_Module:ESP32-WROOM-32 U1
+L imulogger-symbols:ESP32-WROOM-32 U1
 U 1 1 5CB6CF70
 P 2200 3150
 F 0 "U1" H 2200 4850 50  0000 C CNN
@@ -756,4 +756,15 @@ F 3 "~" H 5200 4600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 5200 4600
+$Comp
+L power:GND #PWR?
+U 1 1 5CBCD167
+P 1600 4100
+F 0 "#PWR?" H 1600 3850 50  0001 C CNN
+F 1 "GND" H 1605 3927 50  0000 C CNN
+F 2 "" H 1600 4100 50  0001 C CNN
+F 3 "" H 1600 4100 50  0001 C CNN
+	1    1600 4100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
