@@ -12,4 +12,14 @@ K RF Radio BT ESP ESP32 Espressif onboard PCB antenna
 F https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf
 $ENDCMP
 #
+$CMP V_BAT
+D Power flag
+K power-flag
+$ENDCMP
+#
+$CMP V_EXT
+D Power flag
+K power-flag
+$ENDCMP
+#
 #End Doc Library
