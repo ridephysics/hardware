@@ -730,31 +730,7 @@ Text Notes 3900 1100 0    315  ~ 63
 Bat + Charger
 Text Notes 1050 6200 0    315  ~ 63
 PwrSrcSel + Reg
-$Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5CBEA1D0
-P 4500 2700
-F 0 "J2" H 4580 2692 50  0000 L CNN
-F 1 "BATCONN" H 4580 2601 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4500 2700 50  0001 C CNN
-F 3 "~" H 4500 2700 50  0001 C CNN
-	1    4500 2700
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5200 2600 5200 2300
-Wire Wire Line
-	4950 2300 5200 2300
-Wire Wire Line
-	5200 2300 5450 2300
-Connection ~ 5200 2300
-Wire Wire Line
-	6350 2700 6350 1750
-Wire Wire Line
-	6350 1750 6050 1750
 Connection ~ 6050 1750
-Wire Wire Line
-	4700 2700 4800 2700
 $Comp
 L Device:D_Schottky D4
 U 1 1 5CC26B13
@@ -869,15 +845,14 @@ Connection ~ 2450 7400
 $Comp
 L imulogger-symbols:V_BAT #PWR06
 U 1 1 5CCA121B
-P 4800 2700
-F 0 "#PWR06" H 4800 2550 50  0001 C CNN
-F 1 "V_BAT" H 4818 2873 50  0000 C CNN
-F 2 "" H 4800 2700 50  0001 C CNN
-F 3 "" H 4800 2700 50  0001 C CNN
-	1    4800 2700
-	-1   0    0    1   
+P 6050 1750
+F 0 "#PWR06" H 6050 1600 50  0001 C CNN
+F 1 "V_BAT" H 6068 1923 50  0000 C CNN
+F 2 "" H 6050 1750 50  0001 C CNN
+F 3 "" H 6050 1750 50  0001 C CNN
+	1    6050 1750
+	1    0    0    -1  
 $EndComp
-Connection ~ 4800 2700
 $Comp
 L imulogger-symbols:V_EXT #PWR011
 U 1 1 5CCAA8B1
@@ -921,10 +896,6 @@ Wire Wire Line
 Connection ~ 1250 6900
 Wire Wire Line
 	1250 6900 1300 6900
-Wire Wire Line
-	4800 2700 6350 2700
-Wire Wire Line
-	4700 2600 5200 2600
 $Comp
 L power:PWR_FLAG #FLG0103
 U 1 1 5CCCA68F
@@ -991,4 +962,228 @@ NoConn ~ 9900 2050
 NoConn ~ 2800 3350
 NoConn ~ 9050 6150
 NoConn ~ 9050 6250
+$Comp
+L Device:R_Small R10
+U 1 1 5CD8A10E
+P 7700 3350
+F 0 "R10" V 7504 3350 50  0000 C CNN
+F 1 "100" V 7595 3350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7700 3350 50  0001 C CNN
+F 3 "~" H 7700 3350 50  0001 C CNN
+	1    7700 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 5CD8A55A
+P 6450 3150
+F 0 "R5" H 6509 3196 50  0000 L CNN
+F 1 "2K" H 6509 3105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6450 3150 50  0001 C CNN
+F 3 "~" H 6450 3150 50  0001 C CNN
+	1    6450 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 5CD8AEEA
+P 7700 3050
+F 0 "C5" H 7792 3096 50  0000 L CNN
+F 1 "100n" H 7792 3005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7700 3050 50  0001 C CNN
+F 3 "~" H 7700 3050 50  0001 C CNN
+	1    7700 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L imulogger-symbols:FS8205A U6
+U 1 1 5CD95DDA
+P 7000 3850
+F 0 "U6" H 7000 4225 50  0000 C CNN
+F 1 "FS8205A" H 7000 4134 50  0000 C CNN
+F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 7000 3850 50  0001 C CNN
+F 3 "" H 7000 3850 50  0001 C CNN
+	1    7000 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L imulogger-symbols:dw01 U5
+U 1 1 5CD9CC1D
+P 6950 3150
+F 0 "U5" V 6625 3150 50  0000 C CNN
+F 1 "dw01" V 6716 3150 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 6950 3150 50  0001 C CNN
+F 3 "" H 6950 3150 50  0001 C CNN
+	1    6950 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 3050 7400 3050
+Wire Wire Line
+	7400 3050 7400 2950
+Wire Wire Line
+	7400 2950 7450 2950
+NoConn ~ 7300 3250
+Wire Wire Line
+	7700 3150 7700 3250
+Connection ~ 7700 3150
+Wire Wire Line
+	6600 3150 6550 3150
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5CBEA1D0
+P 8750 3050
+F 0 "J2" H 8830 3042 50  0000 L CNN
+F 1 "BATCONN" H 8830 2951 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8750 3050 50  0001 C CNN
+F 3 "~" H 8750 3050 50  0001 C CNN
+	1    8750 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 3050 8400 3050
+Wire Wire Line
+	8250 3050 8250 3500
+Wire Wire Line
+	8250 3500 7700 3500
+Wire Wire Line
+	7700 3500 7700 3450
+Wire Wire Line
+	4950 2300 5450 2300
+$Comp
+L imulogger-symbols:V_BAT #PWR014
+U 1 1 5CDD3FAE
+P 8400 3050
+F 0 "#PWR014" H 8400 2900 50  0001 C CNN
+F 1 "V_BAT" H 8418 3223 50  0000 C CNN
+F 2 "" H 8400 3050 50  0001 C CNN
+F 3 "" H 8400 3050 50  0001 C CNN
+	1    8400 3050
+	1    0    0    -1  
+$EndComp
+Connection ~ 8400 3050
+Wire Wire Line
+	8400 3050 8250 3050
+Wire Wire Line
+	6600 3050 6050 3050
+Wire Wire Line
+	6050 4000 6700 4000
+Wire Wire Line
+	6600 4150 7400 4150
+Wire Wire Line
+	7400 4150 7400 4000
+Wire Wire Line
+	7400 4000 7300 4000
+$Comp
+L power:GND #PWR012
+U 1 1 5CDE1482
+P 6200 3200
+F 0 "#PWR012" H 6200 2950 50  0001 C CNN
+F 1 "GND" H 6205 3027 50  0000 C CNN
+F 2 "" H 6200 3200 50  0001 C CNN
+F 3 "" H 6200 3200 50  0001 C CNN
+	1    6200 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3150 6200 3150
+Wire Wire Line
+	6200 3150 6200 3200
+Wire Wire Line
+	8550 3150 8550 3700
+Wire Wire Line
+	8550 3700 7750 3700
+Wire Wire Line
+	7750 3700 7750 4250
+Wire Wire Line
+	7750 4250 6500 4250
+Wire Wire Line
+	6500 4250 6500 3900
+Wire Wire Line
+	6500 3900 6700 3900
+Wire Wire Line
+	6700 3800 6700 3900
+Connection ~ 6700 3900
+Wire Wire Line
+	7300 3700 7400 3700
+Wire Wire Line
+	7400 3700 7400 3400
+Wire Wire Line
+	7400 3400 6700 3400
+Wire Wire Line
+	6700 3400 6700 3700
+$Comp
+L power:GND #PWR013
+U 1 1 5CDF671F
+P 7400 3850
+F 0 "#PWR013" H 7400 3600 50  0001 C CNN
+F 1 "GND" V 7405 3722 50  0000 R CNN
+F 2 "" H 7400 3850 50  0001 C CNN
+F 3 "" H 7400 3850 50  0001 C CNN
+	1    7400 3850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7300 3800 7350 3800
+Wire Wire Line
+	7350 3800 7350 3850
+Wire Wire Line
+	7350 3850 7400 3850
+Wire Wire Line
+	7300 3900 7350 3900
+Wire Wire Line
+	7350 3900 7350 3850
+Connection ~ 7350 3850
+$Comp
+L power:PWR_FLAG #FLG0105
+U 1 1 5CE03E12
+P 8550 3700
+F 0 "#FLG0105" H 8550 3775 50  0001 C CNN
+F 1 "PWR_FLAG" V 8550 3828 50  0000 L CNN
+F 2 "" H 8550 3700 50  0001 C CNN
+F 3 "~" H 8550 3700 50  0001 C CNN
+	1    8550 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7450 3700 7750 3700
+Connection ~ 7450 2950
+Wire Wire Line
+	7450 2950 7700 2950
+Connection ~ 7750 3700
+Connection ~ 8550 3700
+Wire Wire Line
+	7450 2950 7450 3700
+Wire Wire Line
+	7700 3150 7550 3150
+$Comp
+L power:PWR_FLAG #FLG0106
+U 1 1 5CE0DB17
+P 7550 3150
+F 0 "#FLG0106" H 7550 3225 50  0001 C CNN
+F 1 "PWR_FLAG" H 7550 3323 50  0000 C CNN
+F 2 "" H 7550 3150 50  0001 C CNN
+F 3 "~" H 7550 3150 50  0001 C CNN
+	1    7550 3150
+	-1   0    0    1   
+$EndComp
+Connection ~ 7550 3150
+Wire Wire Line
+	7550 3150 7300 3150
+Wire Wire Line
+	6050 3050 6050 4000
+Wire Wire Line
+	6600 3250 6600 4150
+$Comp
+L power:PWR_FLAG #FLG0107
+U 1 1 5CE12164
+P 6700 3400
+F 0 "#FLG0107" H 6700 3475 50  0001 C CNN
+F 1 "PWR_FLAG" V 6700 3527 50  0000 L CNN
+F 2 "" H 6700 3400 50  0001 C CNN
+F 3 "~" H 6700 3400 50  0001 C CNN
+	1    6700 3400
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6700 3400
 $EndSCHEMATC
