@@ -1086,11 +1086,6 @@
       (net 17 "Net-(J2-Pad2)"))
     (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 16 "Net-(D1-Pad2)"))
-    (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
   )
 
   (module Diode_SMD:D_SOD-323 (layer F.Cu) (tedit 58641739) (tstamp 5CE2E605)
@@ -1336,7 +1331,6 @@
     (arrow2b (pts (xy 107 62) (xy 107.586421 63.126504)))
   )
 
-  (via (at 169 61.5) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 2))
   (segment (start 122.7 81.435) (end 122.765 81.5) (width 0.25) (layer F.Cu) (net 1) (status 30))
   (segment (start 146.3 81.3) (end 145.925 81.675) (width 0.25) (layer F.Cu) (net 1) (status 30))
   (segment (start 143.825 81.675) (end 143.8 81.65) (width 0.25) (layer F.Cu) (net 1) (status 30))
@@ -1393,6 +1387,7 @@
   (segment (start 122.699999 79.999999) (end 122.699999 79.149999) (width 0.4) (layer B.Cu) (net 1))
   (segment (start 123.875 81.4) (end 123.875 81.175) (width 0.4) (layer B.Cu) (net 1) (status 30))
   (segment (start 123.875 81.175) (end 122.699999 79.999999) (width 0.4) (layer B.Cu) (net 1) (status 10))
+  (via (at 169 61.5) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 2))
   (via (at 153.25 81.75) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 2))
   (via (at 153.25 79.975) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 2))
   (via (at 153.25 77.975) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 2))
