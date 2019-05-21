@@ -195,12 +195,12 @@ F 3 "~" H 8650 1450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x06 J1
+L Connector_Generic:Conn_01x05 J1
 U 1 1 5CB859D4
 P 5050 1900
 F 0 "J1" H 5130 1892 50  0000 L CNN
 F 1 "DEBUG" H 5130 1801 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 5050 1900 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 5050 1900 50  0001 C CNN
 F 3 "~" H 5050 1900 50  0001 C CNN
 	1    5050 1900
 	1    0    0    -1  
@@ -211,17 +211,17 @@ Text GLabel 4850 1800 0    50   Input ~ 0
 TXD0
 Text GLabel 4850 1900 0    50   Input ~ 0
 RXD0
-Text GLabel 4850 2100 0    50   Input ~ 0
+Text GLabel 4850 2000 0    50   Input ~ 0
 IO0
 $Comp
 L power:GND #PWR0106
 U 1 1 5CB87E5F
-P 4850 2200
-F 0 "#PWR0106" H 4850 1950 50  0001 C CNN
-F 1 "GND" V 4855 2072 50  0000 R CNN
-F 2 "" H 4850 2200 50  0001 C CNN
-F 3 "" H 4850 2200 50  0001 C CNN
-	1    4850 2200
+P 4850 2100
+F 0 "#PWR0106" H 4850 1850 50  0001 C CNN
+F 1 "GND" V 4855 1972 50  0000 R CNN
+F 2 "" H 4850 2100 50  0001 C CNN
+F 3 "" H 4850 2100 50  0001 C CNN
+	1    4850 2100
 	0    1    1    0   
 $EndComp
 Text GLabel 2800 2050 2    50   Input ~ 0
@@ -632,7 +632,6 @@ F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 1650 6650 50  0001 C C
 	1    1550 6900
 	1    0    0    -1  
 $EndComp
-NoConn ~ 4850 2000
 Wire Wire Line
 	2000 6900 2500 6900
 NoConn ~ 9900 2050
